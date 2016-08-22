@@ -1,0 +1,201 @@
+/*
+* Based on Liqube Night theme and Papirus Dark colors. Some sites can be broken.
+* Use with this skin: https://addons.mozilla.org/en-US/firefox/addon/arc-papirus-dark-theme/
+*/
+
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document url("about:blank"), url("about:newtab"), url("about:addons"), url("about:stylish-edit") {
+  * {
+    background-color:#222222;
+  }
+}
+
+@-moz-document url-prefix(http://), url-prefix(ftp://), url-prefix(file://), url-prefix(https://) {
+  * {
+    background-color: #222222 !important;
+    border-color: #363636 !important;
+    color: #f1ceca !important;
+  }
+  a:link {
+    color: #2980b9 !important;
+  }
+  a:visited {
+    color: #7f8c8d !important;
+  }
+  a:hover,
+  a:active {
+    color: #3daee9 !important;
+  }
+  em {
+    color: #607486 !important;
+  }
+  img {
+    opacity: 0.80 !important;
+  }
+}
+
+/* Site-specific fixes */
+
+@-moz-document domain("web.telegram.org") {
+  I.icon-message-status.ng-scope,
+  .im_dialog_unread,
+  .im_dialogs_scrollable_wrap .active *,
+  .tg_head_split *,
+  .im_dialog_badge.badge.ng-binding {
+    background-color: #353535 !important;
+  }
+}
+
+@-moz-document domain("app.tutanota.de") {
+  .selected,
+  .selected * {
+    background-color: #2D2D2D !important;
+  }
+}
+
+@-moz-document domain("github.com") {
+  .btn,
+  .button,
+  .btn *,
+  .button * {
+    background-color: #2D2D2D !important;
+    background-image: none !important;
+  }
+  .modal-backdrop {
+    display: none !important
+  }
+}
+
+@-moz-document domain("rutracker.org") {
+  input,
+  .cat,
+  .cat_title,
+  .catHead,
+  .catBottom,
+  .thHead {
+    background: none !important;
+  }
+  tr.hl-tr:hover td, tr.hl-tr:hover td * {
+    background-color: #2D2D2D !important;
+  }
+}
+
+@-moz-document domain("google") { /* FIXME! кнопочки */
+  * {
+    background-image: none;
+    background-color: #2D2D2D;
+  }
+}
+
+@-moz-document domain("developer.mozilla.org") {
+  .htab > ul > li *,
+  .htab > ul > li.selected *,
+  .htab > ul > li,
+  .htab > ul > li.selected {
+    background-color: #2D2D2D !important;
+  }
+}
+
+@-moz-document domain("ebay.com") {
+html > body,
+  element {
+    background: none !important;
+  }
+  .btn {
+    background-color: #2D2D2D !important;
+    background-image: none !important;
+  }
+  * {
+    box-shadow: none !important;
+  }
+}
+
+@-moz-document domain("archlinux.org") {
+  #archnavbarlogo a {
+    display: none !important;
+  }
+}
+
+@-moz-document domain("gnome-look.org") { /* FIXME! */
+  .toptabstextlow {
+    background-image: none !important;
+  }
+}
+
+@-moz-document domain("kde.org") {
+  body {
+    background-image: none;
+  }
+  #header, #header *,
+  .btn { /* FIXME! glitch */
+    background-color: #2D2D2D;
+    background-image: none;
+    background: none;
+  }
+  * {
+    text-shadow: none !important;
+  }
+}
+
+@-moz-document domain("htmlbook.ru") {
+  .layout,
+  footer {
+    background: none;
+  }
+}
+
+@-moz-document domain("habrahabr.ru") {
+  .flag {
+    color: gray !important;
+    background-color: #2D2D2D !important;
+    background-image: none !important;
+  }
+    #navbar_overlay.show {
+    display: none !important;
+  }
+}
+
+@-moz-document domain("localbitcoins.com") {
+  tr.clickable:hover td {
+    background: none !important;
+    background-color: #2D2D2D !important;
+  }
+}
+
+@-moz-document domain("soundcloud.com") {
+  BUTTON.sc-button-play.sc-button.sc-button-xlarge {
+    background-color: rgb(255, 85, 0) !important;
+  }
+}
+
+
+@-moz-document domain("hh.ru"), domain("career.ru") {
+  .m-resume__aside_valid {
+    background: none !important;
+  }
+}
+  
+@-moz-document domain("draw.io") {
+  .geToolbarContainer {
+    background: #2D2D2D !important;
+  }
+}
+
+@-moz-document domain("drweb.ru") {
+  body {
+    background: none !important;
+  }
+}
+
+@-moz-document domain("4pda.ru") {
+  .borderwrap h3, .maintitle, .maintitlecollapse {
+    background: none !important; /* FIXME */
+  }
+}
+ 
+@-moz-document domain("mega.nz") {
+  .files-grid-view.fm .grid-scrolling-table, .files-grid-view.fm .grid-scrolling-table .jspPane, .transfer-scrolling-table, .transfer-scrolling-table .jspPane {
+    background-image: none !important;
+    background-color: #222222 !important;
+  }
+}
