@@ -68,6 +68,9 @@
   .modal-backdrop {
     display: none !important
   }
+  * {
+    text-shadow: none !important;
+  }
 }
 
 @-moz-document domain("rutracker.org") {
